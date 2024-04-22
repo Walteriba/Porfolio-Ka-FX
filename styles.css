@@ -12,10 +12,12 @@
 
   --font-nosifer: "Nosifer", sans-serif;
 }
+
 /* MIS REGLAS */
 .footer_title{
   font-family: var(--font-nosifer);
   font-size: large;
+  cursor:default;
 }
 
 /* REGLAS SOBREESCRITAS */
@@ -52,6 +54,7 @@
   color: var(--mimipink-solid);
   font-family: var(--font-nosifer);
   padding-bottom: 5px;
+  cursor: default;
 }
 
 .is-compact .mdl-layout__title span {
