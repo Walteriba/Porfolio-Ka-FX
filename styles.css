@@ -66,11 +66,12 @@
 }
 
 .portfolio-logo {
-  background: url(images/logo.png) 50% no-repeat;
+  background: url(images/logo.svg) 50% no-repeat;
   background-size: cover;
   height: 150px;
   width: 150px;
   margin: auto auto 10px;
+  filter: invert(100%) sepia(73%) saturate(691%) hue-rotate(284deg) brightness(91%) contrast(96%);
 }
 
 .is-compact .portfolio-logo {
