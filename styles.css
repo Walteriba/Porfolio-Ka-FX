@@ -7,7 +7,7 @@
   --wine-50: rgba(97, 34, 54, 0.5);
   --lila-solid: #946DA0;
   --lila-50: rgba(148, 109, 160, 0.5);
-  --mimipink-solid: #E4CCD4;
+  --mimipink-solid: #e4dadd;
   --mimipink-50: rgba(228, 204, 212, 0.5);
 
   --font-nosifer: "Nosifer", sans-serif;
@@ -15,7 +15,7 @@
 /* MIS REGLAS */
 .footer_title{
   font-family: var(--font-nosifer);
-  font-size: x-large;
+  font-size: large;
 }
 
 /* REGLAS SOBREESCRITAS */
@@ -24,7 +24,8 @@
 }
 
 .mdl-mini-footer {
-  padding: 16px 16px;
+  padding: 5px ;
+  color: var(--mimipink-solid);
 }
 
 .mdl-layout__header-row .mdl-navigation__link {
@@ -205,4 +206,55 @@ footer {
   background-image: url(images/background.png);
   background-size: cover;
 }
+
+/* GALERIA */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 50px;
+}
+
+.gallery-item {
+  margin: 10px;
+  width: 300px;
+  max-height: 400px;
+  position: relative; 
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px var(--wine-solid);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-item:hover figcaption {
+  opacity: 1;
+}
+
 
