@@ -20,6 +20,11 @@
   cursor:default;
 }
 
+.mdl-layout__drawer .is-active{
+  font-family: var(--font-nosifer);
+  font-palette: var(--wine-solid);
+}
+
 /* REGLAS SOBREESCRITAS */
 .mdl-layout__content{
   background-color: var(--mimipink-solid);
@@ -32,6 +37,18 @@
 
 .mdl-layout__header-row .mdl-navigation__link {
   color: var(--mimipink-solid);
+}
+
+.mdl-navigation__link {
+  font-weight: bold;
+  color: var(--mimipink-solid);
+}
+
+.mdl-layout__drawer{
+  width: auto;
+  height: initial;
+  min-height: 200px;
+  background: var(--mimipink-solid);
 }
 
 /* REGLAS DEL PORFOLIO */
@@ -104,12 +121,14 @@
 }
 
 .portfolio-header .mdl-layout__drawer-button {
-    background-color: rgba(197, 197, 197, 0.44);
+    background-color: transparent;
+    color: var(--mimipink-solid);
 }
 
 .portfolio-navigation-row .is-active {
   position: relative;
-  font-weight: bold;
+  font-weight: 300;
+  font-family: var(--font-nosifer);
 }
 
 .portfolio-navigation-row .is-active:after {
@@ -216,12 +235,12 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 50px 50px;
+  padding: 20px 50px;
 }
 
 .gallery-item {
   margin: 10px;
-  width: 300px;
+  width: 250px;
   max-height: 400px;
   position: relative; 
 }
