@@ -85,7 +85,7 @@ p{
   font-weight: 600;
   color: var(--mimipink-solid);
   font-family: var(--font-nosifer);
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   cursor: default;
 }
 
@@ -104,16 +104,16 @@ p{
 .portfolio-logo {
   background: url(images/logo.svg) 50% no-repeat;
   background-size: cover;
-  height: 150px;
-  width: 150px;
-  margin: auto auto 10px;
+  height: 170px;
+  width: 220px;
+  margin: 0 auto;
   filter: invert(100%) sepia(73%) saturate(691%) hue-rotate(284deg) brightness(91%) contrast(96%);
 }
 
 .is-compact .portfolio-logo {
-  height: 50px;
-  width: 50px;
-  margin-top: 7px;
+  height: 80px;
+  width: 80px;
+  margin-top: 5px;
 }
 
 .portfolio-navigation-row {
