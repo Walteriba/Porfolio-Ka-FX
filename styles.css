@@ -14,6 +14,11 @@
 }
 
 /* MIS REGLAS */
+p{
+  font-size: 16px;
+  font-family: "Roboto", sans-serif ;
+}
+
 .footer_title{
   font-family: var(--font-nosifer);
   font-size: large;
@@ -22,7 +27,6 @@
 
 .mdl-layout__drawer .is-active{
   font-family: var(--font-nosifer);
-  font-palette: var(--wine-solid);
 }
 
 /* REGLAS SOBREESCRITAS */
@@ -49,6 +53,17 @@
   height: initial;
   min-height: 200px;
   background: var(--mimipink-solid);
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+  background-color: inherit;
+  color: var(--wine-solid);
+  transition:  0.5s ease-out
+}
+
+.mdl-cell{
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px var(--wine-solid);
 }
 
 /* REGLAS DEL PORFOLIO */
@@ -139,7 +154,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgb(255,64,129);
+  background-color: var(--puce-solid);
   left: 15%;
 }
 
@@ -171,7 +186,9 @@
 
 img.article-image {
   width: 100%;
-  height: auto;
+  height: 400px;
+  object-fit: cover;
+  box-shadow: 0px 0px 5px 0px var(--wine-solid);
 }
 
 .portfolio-max-width {
@@ -181,6 +198,9 @@ img.article-image {
 
 .portfolio-copy {
   max-width: 700px;
+  font-size: xx-large;
+  font-weight: 500;
+  color: var(--wine-solid);
 }
 
 .no-padding {
@@ -230,7 +250,6 @@ footer {
 }
 
 /* GALERIA */
-
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -277,6 +296,30 @@ footer {
 
 .gallery-item:hover figcaption {
   opacity: 1;
+}
+
+/* CONTACTO */
+.contacto {
+  padding: 20px;
+}
+
+.contacto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacto ul li {
+  margin-bottom: 10px;
+}
+
+.contacto ul li a {
+  color: var(--wine-solid);
+  text-decoration: none;
+}
+
+.redes {
+  display: flex;
+  justify-content: space-between;
 }
 
 
