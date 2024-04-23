@@ -5,12 +5,15 @@
   --orchidpink-50: rgba(221, 173, 189, 0.5);
   --wine-solid: #612236;
   --wine-50: rgba(97, 34, 54, 0.5);
+  --wine-20: rgba(97, 34, 54, 0.2);
   --lila-solid: #946DA0;
   --lila-50: rgba(148, 109, 160, 0.5);
   --mimipink-solid: #e4dadd;
   --mimipink-50: rgba(228, 204, 212, 0.5);
+  --dark-grey: #3c3c3c;
 
   --font-nosifer: "Nosifer", sans-serif;
+  --font-bebas: "Bebas Neue", sans-serif;
 }
 
 /* MIS REGLAS */
@@ -70,6 +73,7 @@ p{
 .portfolio-header {
   position: relative;
   background-image: url(images/background.png);
+  background-color: var(--dark-grey);
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -191,6 +195,13 @@ img.article-image {
   box-shadow: 0px 0px 5px 0px var(--wine-solid);
 }
 
+.contact-header-image{ 
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0px 0px 5px 0px var(--wine-solid);
+}
+
 .portfolio-max-width {
   max-width: 900px;
   margin: auto;
@@ -198,9 +209,12 @@ img.article-image {
 
 .portfolio-copy {
   max-width: 700px;
+  font-family: var(--font-bebas);
   font-size: xx-large;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 2px;
   color: var(--wine-solid);
+
 }
 
 .no-padding {
@@ -306,20 +320,39 @@ footer {
 .contacto ul {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 10px; 
 }
 
-.contacto ul li {
-  margin-bottom: 10px;
+.contacto li {
+  display: flex;
 }
 
-.contacto ul li a {
+.contacto li a {
   color: var(--wine-solid);
   text-decoration: none;
+  display: block; 
+  width: 100%; 
+  padding: 10px; 
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
 }
 
-.redes {
-  display: flex;
-  justify-content: space-between;
+.contacto li a:hover {
+  background-color: var(--wine-20); 
 }
 
+.contact-image {
+  margin-right: 10px;
+  max-width: 64px;
+  max-height: 68.8px;
+}
+
+/* Cambiamos a dos columnas en pantallas grandes */
+@media (min-width: 768px) {
+  .contacto ul {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  }
+}
 
